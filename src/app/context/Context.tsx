@@ -2,7 +2,7 @@
 import React,{ createContext, useRef } from 'react'
 
 type ContactContextType = {
-  contactRef: React.RefObject<any>;
+  contactRef: React.RefObject<HTMLElement | null>;
 }
 
 export const ContactContext = createContext<ContactContextType>({

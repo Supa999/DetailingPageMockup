@@ -3,6 +3,6 @@ import React,{ useContext } from 'react'
 import { PackagesContext } from '../context/PackagesContext'
 
 export default function usePackagesContext() {
-  const { packagesRef } = useContext<any>(PackagesContext);
+  const { packagesRef } = useContext(PackagesContext);
   return packagesRef;
 }
