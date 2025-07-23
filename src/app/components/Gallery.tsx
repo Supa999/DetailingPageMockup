@@ -1,0 +1,24 @@
+import React from 'react'
+import { imgSources } from '../libs/constants'
+
+export default function Gallery() {
+
+  function renderGallery() {
+    return imgSources.map(imgSource => {
+      return (
+        <figure key={imgSource}>
+          <img src={imgSource} alt={imgSource} className="ring-4 rounded-xl" />
+        </figure>
+      )
+    }) 
+  }
+
+  return (
+    <section className="text-white flex flex-col items-center justify-center gap-5 min-h-[90vh] w-80 md:w-200 mx-auto">
+      <h2 className="text-6xl text-center">Some of My Work</h2>
+      <section className="columns-1 md:columns-2 lg:columns-3 space-y-5">
+        {renderGallery()}
+      </section>
+    </section>
+  )
+}
