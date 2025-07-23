@@ -9,11 +9,7 @@ export default function Hero() {
   const contactRef = useContactContext();
 
   function scroll() {
-    if(contactRef.current) {
-      setTimeout(() => {
-        contactRef.current.scrollIntoView({ behavior: 'smooth' });
-      }, 300)
-    }
+    contactRef.current?.scrollIntoView({behavior: "smooth"});
   }
 
   return (
