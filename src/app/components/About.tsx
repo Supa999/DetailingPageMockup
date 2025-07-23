@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from "react";
+import React from "react";
 import usePackagesContext from "../hooks/usePackagesContext";
 
 export default function About() {

@@ -3,7 +3,7 @@ import XLogo from "./XLogo";
 import InstaLogo from './InstaLogo';
 import FacebookLogo from "./FacebookLogo";
 
-export default function () {
+export default function Header() {
   return (
     <header className="fixed top-0 w-screen min-h-[10vh] text-neutral-900 bg-white flex items-center justify-between">
       <h1 className="font-extrabold text-center text-4xl md:text-5xl flex-1/2">SS Auto Detailing</h1>
