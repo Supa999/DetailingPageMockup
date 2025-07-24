@@ -1,5 +1,5 @@
 'use client'
-import React,{ useContext } from 'react'
+import { useContext } from 'react'
 import { PackagesContext } from '../context/PackagesContext'
 
 export default function usePackagesContext() {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { imgSources } from '../libs/constants'
+import Image from 'next/image'
 
 export default function Gallery() {
 
@@ -7,7 +8,7 @@ export default function Gallery() {
     return imgSources.map(imgSource => {
       return (
         <figure key={imgSource}>
-          <img src={imgSource} alt={imgSource} className="ring-4 rounded-xl" />
+          <Image src={imgSource} alt={imgSource} width={0} height={0} sizes="100vw" style={{width: '100%', height: "auto"}} className="ring-4 ring-white rounded-xl" />
         </figure>
       )
     }) 
