@@ -50,9 +50,9 @@ export default function Packages() {
   }
 
   return (
-    <section className="min-h-[90vh] flex flex-col items-center justify-center text-white gap-5 w-80 mx-auto mt-60 scroll-mt-25" ref={packagesRef}>
-      <h2 className="text-7xl text-center">Packages</h2>
-      <p className="text-xl text-center">
+    <section className="min-h-[90vh] flex flex-col items-center justify-center text-white gap-5 w-80 md:w-100 lg:w-120 mx-auto mt-60 scroll-mt-25" ref={packagesRef}>
+      <h2 className="text-6xl md:text-7xl lg:text-8xl text-center font-extrabold">Packages</h2>
+      <p className="text-2xl text-center">
         We offer a variety of detailing packages to suit your needs, from basic
         washes to full detailing services. Each package is designed to provide
         the best care for your vehicle.

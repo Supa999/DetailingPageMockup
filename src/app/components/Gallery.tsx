@@ -14,8 +14,8 @@ export default function Gallery() {
   }
 
   return (
-    <section className="text-white flex flex-col items-center justify-center gap-5 min-h-[90vh] w-80 md:w-200 mx-auto">
-      <h2 className="text-6xl text-center">Some of My Work</h2>
+    <section className="text-white flex flex-col items-center justify-center gap-10 min-h-[90vh] w-80 md:w-160 lg:w-230 xl:w-300 2xl:w-350 mx-auto">
+      <h2 className="text-6xl md:text-7xl lg:text-8xl text-center font-extrabold">Some of My Work</h2>
       <section className="columns-1 md:columns-2 lg:columns-3 space-y-5">
         {renderGallery()}
       </section>
