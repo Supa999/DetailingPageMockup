@@ -8,7 +8,7 @@ export default function Gallery() {
     return imgSources.map(imgSource => {
       return (
         <figure key={imgSource}>
-          <Image src={imgSource} alt={imgSource} width={0} height={0} sizes="100vw" style={{width: '100%', height: "auto"}} className="ring-4 ring-white rounded-xl" />
+          <Image src={imgSource} alt={imgSource} width={0} height={0} sizes="100vw" style={{width: '100%', height: "auto"}} className="ring-4 ring-white rounded-xl" unoptimized />
         </figure>
       )
     }) 
